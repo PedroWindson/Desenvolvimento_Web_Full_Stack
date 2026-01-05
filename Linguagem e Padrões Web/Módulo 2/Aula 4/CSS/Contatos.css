@@ -1,0 +1,52 @@
+nav {
+    background-color: lightgreen;
+    padding: 10px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    width: 80px;
+    margin-right: 5px;
+    flex-shrink: 0;
+}
+
+label[for="name"], label[for="email"] {
+    margin-right: -27px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#logo {
+    width: 400px;
+    height: 280px;
+    text-align: left;
+}
+
+#name {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#email {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#message {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#submit-btn {
+    background-color: lightgreen;
+    color: black;
+    border: black 2px solid;
+    padding: 5px 50px;
+    cursor: pointer;
+    font-size: 16px;
+}

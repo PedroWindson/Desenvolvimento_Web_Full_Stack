@@ -1,0 +1,149 @@
+<!--
+Um website pode apresentar diferentes elementos e tornar-se motivo de impulsionamento de negócios ou não, tudo dependerá do quão atrativo for a página criada.
+Considerando o uso somente do HTML, sabemos que as páginas ficam relativamente simples.
+Nessa perspectiva, crie um site que utilize com qualidade os diferentes elementos HTML existentes.
+Esta página deverá apresentar uma lista de especificações de um produto único, que uma empresa busca vender por meio do website, 
+além de um formulário para envio de mensagens (nome, e-mail e mensagem).
+Utilize sua criatividade para criar tal página sem qualquer estilização.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoria em prática - Tema 1</title>
+</head>
+<body>
+    <h1>Produtos</h1><br>
+
+    <h2>Nome:</h2>
+    <p>Smartphone HTML XYZ Plus</p>
+    
+    <h2>Imagem:</h2>
+    <p><img src="./assets/smartphone.png" alt="Imagem do Smartphone HTML XYZ Plus" width="200"></p>
+    
+    <h2>Descrição:</h2>
+    <p>Um smartphone moderno com tela de alta resolução, câmera avançada e bateria de longa duração.</p>
+    
+    <h2>Preço:</h2>
+    <p>R$ 2.499,00</p>
+    
+    <h2>Especificações técnicas:</h2>
+    <ul>
+        <li>Tela: 6.5 polegadas, 1080 x 2400 pixels</li>
+        <li>Câmera traseira: 48 MP + 8 MP + 2 MP</li>
+        <li>Câmera frontal: 16 MP</li>
+        <li>Processador: Octa-core 2.0 GHz</li>
+        <li>Memória RAM: 6 GB</li>
+        <li>Armazenamento interno: 128 GB</li>
+        <li>Bateria: 4000 mAh</li>
+        <li>Sistema operacional: Android 11</li>
+        <li>Conectividade: 4G, Wi-Fi, Bluetooth 5.0</li>
+        <li>Fabricante: HTML</li>
+    </ul>
+    
+    <h2>Disponibilidade: <strong><span style="color: green;">Em estoque</span></strong></h2>
+    
+    <button onclick="alert('Produto adicionado ao carrinho!')">Adicionar ao carrinho</button>
+
+    <hr>
+
+    <h2>Nome:</h2>
+    <p>Notebook CSS ABC Pro 15</p>
+    
+    <h2>Imagem:</h2>
+    <p><img src="./assets/notebook.png" alt="Imagem do Notebook CSS ABC Pro 15" width="200"></p>
+
+    <h2>Descrição:</h2>
+    <p>Um notebook potente para profissionais, com design elegante e desempenho confiável.</p>
+    
+    <h2>Preço:</h2>
+    <p>R$ 4.299,00</p>
+    
+    <h2>Especificações técnicas:</h2>
+    <ul>
+        <li>Tela: 15.6 polegadas, 1920 x 1080 pixels</li>
+        <li>Processador: Intel Core i7-1165G7</li>
+        <li>Memória RAM: 16 GB</li>
+        <li>Armazenamento interno: 512 GB SSD</li>
+        <li>Placa de vídeo: NVIDIA GeForce MX450</li>
+        <li>Sistema operacional: Windows 10 Pro</li>
+        <li>Conectividade: Wi-Fi 6, Bluetooth 5.1</li>
+        <li>Fabricante: CSS</li>
+    </ul>
+    
+    <h2>Disponibilidade: <b><span style="color: green;">Em estoque</span></b></h2>
+    
+    <button onclick="alert('Produto adicionado ao carrinho!')">Adicionar ao carrinho</button>
+
+    <hr>
+
+    <h2>Nome:</h2>
+    <p>Tablet JS IJK Ultra 10</p>
+    
+    <h2>Imagem:</h2>
+    <p><img src="./assets/tablet.png" alt="Imagem do Tablet JS IJK Ultra 10" width="200"></p>
+
+    <h2>Descrição:</h2>
+    <p>Um tablet moderno com tela de alta resolução, câmera avançada e bateria de longa duração.</p>
+    
+    <h2>Preço:</h2>
+    <p>R$ 1.899,00</p>
+    
+    <h2>Especificações técnicas:</h2>
+    <ul>
+        <li>Tela: 10.1 polegadas, 1280 x 800 pixels</li>
+        <li>Câmera traseira: 8 MP + 5 MP</li>
+        <li>Câmera frontal: 5 MP</li>
+        <li>Processador: Octa-core 1.8 GHz</li>
+        <li>Memória RAM: 4 GB</li>
+        <li>Armazenamento interno: 64 GB</li>
+        <li>Bateria: 3500 mAh</li>
+        <li>Sistema operacional: Android 11</li>
+        <li>Conectividade: Wi-Fi, Bluetooth 5.0</li>
+        <li>Fabricante: JS</li>
+    </ul>
+    
+    <h2>Disponibilidade: <b><span style="color: red;">Esgotado</span></b></h2>
+    
+    <button onclick="alert('Produto adicionado ao carrinho!')">Adicionar ao carrinho</button>
+
+    <hr><br>
+
+    <h2 style="color: orange;">Em caso de dúvidas:</h2>
+    <h2>Formulário para mensagens</h2>
+    <form>
+        <br>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Nome">
+        <br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="E-mail">
+        <br><br>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" rows="10" cols="18" placeholder="Escreva sua mensagem aqui"></textarea>
+    </form>
+    <button onclick="alert('Mensagem enviada com sucesso!')">Enviar</button>
+    
+    <hr>
+
+    <h2>Formulário (Tabela) para mensagens</h2>
+    <form>
+        <table>
+            <tr>
+                <td><label for="nome2">Nome:</label></td>
+                <td><input type="text" id="nome2" placeholder="Nome"></td>
+            </tr>
+            <tr>
+                <td><label for="email2">E-mail:</label></td>
+                <td><input type="email" id="email2" placeholder="E-mail"></td>
+            </tr>
+            <tr>
+                <td><label for="mensagem2">Mensagem:</label></td>
+                <td><textarea id="mensagem2" rows="10" cols="18" placeholder="Escreva sua mensagem aqui"></textarea></td>
+            </tr>
+        </table>
+        <button onclick="alert('Mensagem enviada com sucesso!')">Enviar</button>
+</body>
+</html>

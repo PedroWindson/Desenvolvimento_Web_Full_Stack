@@ -1,0 +1,1 @@
+document.getElementById('paragrafo').innerHTML = 'Usando JavaScript!';
