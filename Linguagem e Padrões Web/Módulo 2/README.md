@@ -1,0 +1,1 @@
+O exercício prático (aula 4) ainda não está concluído, pois estou finalizando as aulas restantes para não me atrasar no curso!
