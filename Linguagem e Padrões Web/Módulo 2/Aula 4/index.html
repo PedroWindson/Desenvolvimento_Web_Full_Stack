@@ -4,19 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/index.css">
-    <title>Teoria em prática - Tema 2</title>
+    <title>Página para consultório odontológico fictício</title>
 </head>
 <body>
     <header>
         <nav>
-            <img src="./assets/logo.png" alt="Logo da Empresa" id="logo">
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Tratamentos</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="./HTML/Contato.html">Contato</a></li>
+            <ul class="menu">
+                <li><button id="btnInicio" onclick="window.location.href='./index.html'">Início</button></li>
+                <li><button id="btnTratamentos" onclick="window.location.href='./index.html'">Tratamentos</button></li>
+                <li><button id="btnSobreNos" onclick="window.location.href='./index.html'">Sobre Nós</button></li>
+                <li><button id="btnContato" onclick="window.location.href='./HTML/Contato.html'">Contato</button></li>
             </ul>
         </nav>
+    <br>
+    <h1>Bem-vindo ao nosso consultório odontológico!</h1>
+    <h3>Aqui, cuidamos do seu sorriso com dedicação e profissionalismo.</h3>
+    <br><br>
     </header>
+    <main>
+        <h1>Confira nossos tratamentos:</h1>
+        <br><br><br>
+        
+        <!-- 
+        
+        O <span> aqui serve para padronizar a largura das palavras 
+        e impedir que as imagens fiquem desreguladas 
+        (umas mais para a direita e outras mais para a esquerda) 
+        
+        -->
+        
+        <ul id="tratamentos">
+            <li>
+                <span class="label-tratamento">Limpeza Dental</span>
+                <img src="./Assets/Limpeza_Dental.png" alt="Limpeza Dental">
+            </li>
+            <li>
+                <span class="label-tratamento">Clareamento Dental</span>
+                <img src="./Assets/Clareamento_Dental.png" alt="Clareamento Dental">
+            </li>
+            <li>
+                <span class="label-tratamento">Ortodontia</span>
+                <img src="./Assets/Ortodontia.png" alt="Ortodontia">
+            </li>
+            <li>
+                <span class="label-tratamento">Implante Dentário</span>
+                <img src="./Assets/Implante_Dentario.png" alt="Implante Dentário">
+            </li>
+            <li>
+                <span class="label-tratamento">Prótese Dentária</span>
+                <img src="./Assets/Protese_Dentaria.png" alt="Prótese Dentária">
+            </li>
+        </ul>
+    </main>
+    <br>
+    <footer>
+        <hr>
+        <address>Rua Alguma Coisa, 123 - Alguma Coisa, SP</address>
+    </footer>
+    <br>
+    copyright © 2024 Consultório Odontológico Fictício
 </body>
 </html>

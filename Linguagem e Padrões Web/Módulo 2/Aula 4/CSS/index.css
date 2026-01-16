@@ -1,5 +1,88 @@
-#logo {
-    width: 200px;
-    height: auto;
-    text-align: left;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: lightblue;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('../Assets/Logo.png');
+    background-position: center;
+    background-repeat: space;
+    background-attachment: scroll;
+    min-height: 100vh;
+}
+
+.menu {
+    display: flex;             /* 1. Faz o flexbox */
+    justify-content: center;   /* 2. Centraliza os itens horizontalmente */
+    gap: 20px;                 /* 3. Cria um espaço uniforme entre os botões */
+    list-style: none;          /* 4. Remove as "bolinhas" da lista */
+    padding: 0;                /* 5. Remove o recuo padrão da lista */
+    margin: 0;                 /* 6. Remove margens externas */
+    flex-wrap: wrap;           /* 7. Permite que os botões pulem de linha se a tela for pequena */
+}
+
+#btnInicio, #btnTratamentos, #btnSobreNos, #btnContato {
+    /* Fallback: cor sólida caso o navegador não suporte gradiente */
+    background-color: lightblue;
+
+    /* Gradiente: vai de um azul bem clarinho para o azul original */
+    background: linear-gradient(to bottom, #e0f7fa 0%, lightseagreen 100%);
+    color: black;
+    box-shadow: lightgray 2px 2px 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    /* Borda sutil para definir o gradiente */
+    border: 1px solid #99c2d1;
+    border-radius: 5px;
+    transition: 0.3s;
+    letter-spacing: 3px;
+}
+
+#btnInicio:hover, #btnTratamentos:hover, #btnSobreNos:hover, #btnContato:hover, #submit-btn:hover {
+    /* Gradiente no hover: usando tons de lightseagreen */
+    background: linear-gradient(to bottom, #20b2aa 0%, #1a948e 100%);
+    
+    /* Efeito leve de elevação ao passar o mouse */
+    transform: translateY(-3px); 
+    color: white;
+    
+    /* Sombra aumenta no hover */
+    box-shadow: lightgray 4px 4px 10px; 
+}
+
+main #tratamentos li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+main #tratamentos img {
+    width: 430px;
+    height: 430px;
+}
+
+.label-tratamento {
+    display: inline-block;
+    width: 150px;
+}
+
+header h1, header h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-align: center;
 }
