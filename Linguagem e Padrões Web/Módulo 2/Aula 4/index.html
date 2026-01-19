@@ -11,8 +11,8 @@
         <nav>
             <ul class="menu">
                 <li><button id="btnInicio" onclick="window.location.href='./index.html'">Início</button></li>
-                <li><button id="btnTratamentos" onclick="window.location.href='./index.html'">Tratamentos</button></li>
-                <li><button id="btnSobreNos" onclick="window.location.href='./index.html'">Sobre Nós</button></li>
+                <li><button id="btnTratamentos" onclick="window.location.href='./HTML/Tratamentos.html'">Tratamentos</button></li>
+                <li><button id="btnSobreNos" onclick="window.location.href='./HTML/Sobre_Nos.html'">Sobre Nós</button></li>
                 <li><button id="btnContato" onclick="window.location.href='./HTML/Contato.html'">Contato</button></li>
             </ul>
         </nav>
@@ -22,39 +22,11 @@
     <br><br>
     </header>
     <main>
-        <h1>Confira nossos tratamentos:</h1>
-        <br><br><br>
-        
-        <!-- 
-        
-        O <span> aqui serve para padronizar a largura das palavras 
-        e impedir que as imagens fiquem desreguladas 
-        (umas mais para a direita e outras mais para a esquerda) 
-        
-        -->
-        
-        <ul id="tratamentos">
-            <li>
-                <span class="label-tratamento">Limpeza Dental</span>
-                <img src="./Assets/Limpeza_Dental.png" alt="Limpeza Dental">
-            </li>
-            <li>
-                <span class="label-tratamento">Clareamento Dental</span>
-                <img src="./Assets/Clareamento_Dental.png" alt="Clareamento Dental">
-            </li>
-            <li>
-                <span class="label-tratamento">Ortodontia</span>
-                <img src="./Assets/Ortodontia.png" alt="Ortodontia">
-            </li>
-            <li>
-                <span class="label-tratamento">Implante Dentário</span>
-                <img src="./Assets/Implante_Dentario.png" alt="Implante Dentário">
-            </li>
-            <li>
-                <span class="label-tratamento">Prótese Dentária</span>
-                <img src="./Assets/Protese_Dentaria.png" alt="Prótese Dentária">
-            </li>
-        </ul>
+        <script>
+            // Destaque no botão "Início" para indicar a página atual
+            document.getElementById('btnInicio').style.backgroundColor = '#1a948e';
+            document.getElementById('btnInicio').style.color = 'white';
+        </script>
     </main>
     <br>
     <footer>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Tratamentos.css">
+    <title>Tratamentos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><button id="btnInicio" onclick="window.location.href='../index.html'">Início</button></li>
+                <li><button id="btnTratamentos" onclick="window.location.href='Tratamentos.html'">Tratamentos</button></li>
+                <li><button id="btnSobreNos" onclick="window.location.href='./Sobre_Nos.html'">Sobre Nós</button></li>
+                <li><button id="btnContato" onclick="window.location.href='./Contato.html'">Contato</button></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <script>
+            // Destaque no botão "Tratamentos" para indicar a página atual
+            document.getElementById('btnTratamentos').style.backgroundColor = '#1a948e';
+            document.getElementById('btnTratamentos').style.color = 'white';
+        </script>
+        <!-- 
+        
+        O <span> aqui serve para padronizar a largura das palavras 
+        e impedir que as imagens fiquem desreguladas 
+        (umas mais para a direita e outras mais para a esquerda) 
+        
+        -->
+        <div class="tratamentos-container">
+            <h1>Confira nossos tratamentos:</h1>
+            <br><br><br>
+            <ul id="tratamentos">
+                <div class="tratamentos-row1">
+                    <li>
+                        <span class="label-tratamento">
+                            <h3>Limpeza Dental</h3>
+                            <img src="../Assets/Limpeza_Dental.png" alt="Limpeza Dental">
+                        </span>
+                    </li>
+                    <li>
+                        <span class="label-tratamento">
+                            <h3>Clareamento Dental</h3>
+                            <img src="../Assets/Clareamento_Dental.png" alt="Clareamento Dental">
+                        </span>
+                    </li>
+                </div>
+
+                <div class="tratamentos-row2">
+                    <li>
+                        <span class="label-tratamento">
+                            <h3>Ortodontia</h3>
+                            <img src="../Assets/Ortodontia.png" alt="Ortodontia">
+                        </span>
+                    </li>
+                    <li>
+                        <span class="label-tratamento">
+                            <h3>Implante Dentário</h3>
+                            <img src="../Assets/Implante_Dentario.png" alt="Implante Dentário">
+                        </span>
+                    </li>
+                </div>
+
+                <div class="tratamentos-row3">
+                    <li>
+                        <span class="label-tratamento">
+                            <h3>Prótese Dentária</h3>
+                            <img src="../Assets/Protese_Dentaria.png" alt="Prótese Dentária">
+                        </span>
+                    </li>
+                </div>
+                <button id="btnValores" onclick="window.location.href='./HTML/Contato.html'">Entre em Contato para mais informações sobre o valor dos tratamentos</button>
+            </ul>
+        </div>
+    </main>
+    <br>
+    <br>
+    <footer>
+        <hr>
+        <div id="rodape-row1">
+            <ul id="informacoes">
+                <li><h3><address>Endereço: Av. Sorriso Digital, 1024 - Bairro Web Design</address></h3></li>
+                <br>
+                <li><h3>Horário de atendimento:</h3></li>
+                <li><p>Segunda a Sexta: 08:00 às 19:00</p></li>
+                <li><p>Sábado: 08:00 às 13:00</p></li>
+            </ul>
+        </div>
+        <br>
+        <div id="rodape-row2">
+            <h3>Veja nossas redes sociais:</h3>
+            <p>Instagram: @consultorio_odontologico </p>
+            <p>Facebook: /consultorioodontologico</p>
+            <p>Twitter: @consultorio_odonto</p>
+        </div>
+        <br>
+        Copyright © 2026 Consultório Odontológico Fictício
+    </footer>
+    <br>
+    
+</body>
+</html>

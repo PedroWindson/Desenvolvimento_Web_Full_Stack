@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Sobre_Nos.css">
+    <title>Sobre Nós</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><button id="btnInicio" onclick="window.location.href='../index.html'">Início</button></li>
+                <li><button id="btnTratamentos" onclick="window.location.href='./Tratamentos.html'">Tratamentos</button></li>
+                <li><button id="btnSobreNos" onclick="window.location.href='Sobre_Nos.html'">Sobre Nós</button></li>
+                <li><button id="btnContato" onclick="window.location.href='./Contato.html'">Contato</button></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <script>
+            // Destaque no botão "Sobre Nós" para indicar a página atual
+            document.getElementById('btnSobreNos').style.backgroundColor = '#1a948e';
+            document.getElementById('btnSobreNos').style.color = 'white';
+        </script>
+    </main>
+</body>
+</html>
